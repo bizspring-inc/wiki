@@ -1,0 +1,58 @@
+name: V8 Validate
+
+on:
+  pull_request:
+    paths:
+      - 'faq/**.md'
+      - 'service/**.md'
+      - 'article/**.md'
+      - 'person/**.md'
+      - '_config/**.yml'
+      - '_scripts/v8-validate.mjs'
+  push:
+    branches: [main]
+    paths:
+      - 'faq/**.md'
+      - 'service/**.md'
+      - 'article/**.md'
+      - 'person/**.md'
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install deps
+        run: npm ci || npm install
+
+      - name: Run V8 validation
+        id: v8
+        run: node _scripts/v8-validate.mjs
+
+      - name: Comment PR with V8 report
+        if: github.event_name == 'pull_request' && always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const path = '_build/v8-report.md';
+            if (!fs.existsSync(path)) return;
+            const report = fs.readFileSync(path, 'utf8');
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: report
+            });
