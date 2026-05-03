@@ -1,0 +1,26 @@
+{
+  "name": "bizspring-wiki",
+  "version": "1.0.0",
+  "description": "BizSpring Enterprise Wiki - Citation Moat 자체 적용 자산",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "node _scripts/build.mjs",
+    "validate": "node _scripts/v8-validate.mjs",
+    "dev": "node _scripts/build.mjs --watch"
+  },
+  "dependencies": {
+    "yaml": "^2.6.0",
+    "marked": "^14.1.0",
+    "gray-matter": "^4.0.3"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "CC-BY-4.0",
+  "homepage": "https://wiki.bizspring.co.kr",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bizspring-inc/wiki.git"
+  }
+}

@@ -1,0 +1,70 @@
+# Trust Keys v1.0 정식 (KHub `3a3907ab` 기준)
+# 7묶음 모든 의무 키 채움 → 페이지 Trust 점수 산출
+
+trust_keys:
+  expertise:
+    weight: 10
+    description: "전문성 — 작성자/조직의 분야 전문 지식 입증"
+    schema_mapping: "Person.knowsAbout, Organization.knowsAbout"
+    examples:
+      - "10년 GA4 컨설팅 경력"
+      - "ISMS-P 인증 컨설턴트"
+      - "데이터 마트 100건+ 구축"
+
+  experience:
+    weight: 10
+    description: "경험 — 실제 운영/사용 사실 입증 (E-E-A-T 첫 E)"
+    schema_mapping: "Article.author + dateCreated, Service.serviceOutput"
+    examples:
+      - "JUVIS·DENTIST 데이터 마트 운영 중"
+      - "4년 자사 GA4 SaaS 운영"
+
+  authoritativeness:
+    weight: 8
+    description: "권위 — 외부 인정·수상·언론 보도·논문 인용"
+    schema_mapping: "Article.citation, Organization.award"
+    examples:
+      - "한경 보도 / 매일경제 보도"
+      - "Google Marketing Platform 파트너"
+
+  trustworthiness:
+    weight: 8
+    description: "신뢰 — 법적 신원·정확성·투명성·갱신 흔적"
+    schema_mapping: "Organization.legalName, NIPA registration"
+    examples:
+      - "(주)비즈스프링 / Bizspring Inc."
+      - "사업자등록번호 / 통신판매업 신고번호"
+
+  sameAs:
+    weight: 5
+    description: "동일성 — 외부 권위 사이트와의 연결 (Knowledge Graph용)"
+    schema_mapping: "sameAs[]"
+    examples:
+      - "https://www.linkedin.com/company/bizspring"
+      - "https://www.bizspring.co.kr"
+      - "Wikipedia entry URL (있는 경우)"
+
+  provider:
+    weight: 5
+    description: "제공자 — 서비스/콘텐츠 제공 주체 명확화"
+    schema_mapping: "Service.provider, Article.publisher"
+    examples:
+      - "비즈스프링"
+      - "비즈스프링·인트렌치 (협업)"
+      - "와플러스·비즈스프링 (협업)"
+
+  updated_signals:
+    weight: 4
+    description: "갱신 신호 — 최근성·활성도·dateModified"
+    schema_mapping: "dateModified, version, lastReviewed"
+    examples:
+      - "last_updated: 2026-05-19"
+      - "monthly review by PO"
+
+# 합계 weight 50점 만점
+# Schema Type별 임계값:
+#   FAQPage  ≥ 40 (7묶음 모두 채움 + Schema 정확)
+#   Service  ≥ 47 (BizPO 매핑 + TCR 정확)
+#   Article  ≥ 50 (저자/날짜/인용 명확)
+#   Person   ≥ 43 (sameAs LinkedIn 의무)
+#   P0 Service (S-01 AMP / S-02 MA) ≥ 75 (영업 케이스 1건 첨부 의무)

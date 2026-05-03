@@ -1,0 +1,48 @@
+# BizSpring Enterprise Wiki - Site Config
+title: "BizSpring Enterprise Wiki"
+description: "비즈스프링 자사 Wiki — Citation Moat 자체 적용. AI 검색에서 정확하게 인용되는 권위 있는 자사 정보."
+url: "https://wiki.bizspring.co.kr"
+url_temp: "https://wiki.pages.dev"
+lang: "ko"
+
+organization:
+  name: "비즈스프링"
+  legalName: "(주)비즈스프링 / Bizspring Inc."
+  url: "https://www.bizspring.co.kr"
+  email_sales: "sales@bizspring.co.kr"
+  email_support: "saas@bizspring.co.kr"
+  sameAs:
+    - "https://www.bizspring.co.kr"
+    - "https://wiki.bizspring.co.kr"
+    - "https://www.linkedin.com/company/bizspring"
+
+publisher:
+  name: "비즈스프링"
+  url: "https://www.bizspring.co.kr"
+
+# Build options
+build:
+  output_dir: "_build"
+  source_dirs:
+    - "faq"
+    - "service"
+    - "article"
+    - "person"
+
+# Schema.org defaults
+schema_defaults:
+  inLanguage: "ko"
+  isAccessibleForFree: true
+
+# Trust 임계값 (Schema Type별)
+trust_thresholds:
+  FAQPage: 40
+  Service: 47
+  Article: 50
+  Person: 43
+
+# License
+license:
+  name: "Creative Commons Attribution 4.0 International"
+  short: "CC BY 4.0"
+  url: "https://creativecommons.org/licenses/by/4.0/"

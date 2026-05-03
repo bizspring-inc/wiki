@@ -1,0 +1,182 @@
+# BreadcrumbList 33페이지 계층 매핑 v1.0
+# TQ3 Schema 자사 v1.0 (KHub `bc409dfd`) 기반
+# Schema.org BreadcrumbList → 검색 엔진 계층 인식 → Trust +3~5점
+
+# FAQPage (10건)
+faq-about:
+  - { name: "Home", url: "/" }
+  - { name: "FAQ", url: "/faq/" }
+  - { name: "회사 소개" }
+
+faq-solutions:
+  - { name: "Home", url: "/" }
+  - { name: "FAQ", url: "/faq/" }
+  - { name: "솔루션 개요" }
+
+faq-pricing:
+  - { name: "Home", url: "/" }
+  - { name: "FAQ", url: "/faq/" }
+  - { name: "가격" }
+
+faq-onboarding:
+  - { name: "Home", url: "/" }
+  - { name: "FAQ", url: "/faq/" }
+  - { name: "도입 절차" }
+
+faq-security:
+  - { name: "Home", url: "/" }
+  - { name: "FAQ", url: "/faq/" }
+  - { name: "보안·개인정보" }
+
+faq-trial:
+  - { name: "Home", url: "/" }
+  - { name: "FAQ", url: "/faq/" }
+  - { name: "무료 체험" }
+
+faq-tech-stack:
+  - { name: "Home", url: "/" }
+  - { name: "FAQ", url: "/faq/" }
+  - { name: "기술 스택" }
+
+faq-contact:
+  - { name: "Home", url: "/" }
+  - { name: "FAQ", url: "/faq/" }
+  - { name: "문의" }
+
+faq-competition:
+  - { name: "Home", url: "/" }
+  - { name: "FAQ", url: "/faq/" }
+  - { name: "경쟁사 차별점" }
+
+faq-dogfooding:
+  - { name: "Home", url: "/" }
+  - { name: "FAQ", url: "/faq/" }
+  - { name: "도그푸딩" }
+
+# Service (15건)
+svc-pkg-amp:
+  - { name: "Home", url: "/" }
+  - { name: "Service", url: "/service/" }
+  - { name: "패키지", url: "/service/?cat=pkg" }
+  - { name: "AMP" }
+
+svc-pkg-ma:
+  - { name: "Home", url: "/" }
+  - { name: "Service", url: "/service/" }
+  - { name: "패키지", url: "/service/?cat=pkg" }
+  - { name: "MA" }
+
+svc-sol-08-mdp:
+  - { name: "Home", url: "/" }
+  - { name: "Service", url: "/service/" }
+  - { name: "솔루션", url: "/service/?cat=sol" }
+  - { name: "mDP 데이터 마트" }
+
+svc-sol-09-ai-agentic:
+  - { name: "Home", url: "/" }
+  - { name: "Service", url: "/service/" }
+  - { name: "솔루션", url: "/service/?cat=sol" }
+  - { name: "AI Agentic" }
+
+svc-sol-11-utm-lift:
+  - { name: "Home", url: "/" }
+  - { name: "Service", url: "/service/" }
+  - { name: "솔루션", url: "/service/?cat=sol" }
+  - { name: "UTM-LIFT" }
+
+svc-sol-12-smartdash:
+  - { name: "Home", url: "/" }
+  - { name: "Service", url: "/service/" }
+  - { name: "솔루션", url: "/service/?cat=sol" }
+  - { name: "SmartDash" }
+
+svc-sol-13-ga4-saas:
+  - { name: "Home", url: "/" }
+  - { name: "Service", url: "/service/" }
+  - { name: "솔루션", url: "/service/?cat=sol" }
+  - { name: "GA4 SaaS" }
+
+svc-sol-14-smartfeed:
+  - { name: "Home", url: "/" }
+  - { name: "Service", url: "/service/" }
+  - { name: "솔루션", url: "/service/?cat=sol" }
+  - { name: "SmartFeed" }
+
+svc-sol-15-digo:
+  - { name: "Home", url: "/" }
+  - { name: "Service", url: "/service/" }
+  - { name: "솔루션", url: "/service/?cat=sol" }
+  - { name: "DIGO" }
+
+svc-sol-16-logger:
+  - { name: "Home", url: "/" }
+  - { name: "Service", url: "/service/" }
+  - { name: "솔루션", url: "/service/?cat=sol" }
+  - { name: "Logger" }
+
+svc-sol-tagman:
+  - { name: "Home", url: "/" }
+  - { name: "Service", url: "/service/" }
+  - { name: "솔루션", url: "/service/?cat=sol" }
+  - { name: "TAGMAN" }
+
+svc-unit-air:
+  - { name: "Home", url: "/" }
+  - { name: "Service", url: "/service/" }
+  - { name: "유닛", url: "/service/?cat=unit" }
+  - { name: "AIR" }
+
+svc-unit-rpt:
+  - { name: "Home", url: "/" }
+  - { name: "Service", url: "/service/" }
+  - { name: "유닛", url: "/service/?cat=unit" }
+  - { name: "Report" }
+
+svc-unit-cts:
+  - { name: "Home", url: "/" }
+  - { name: "Service", url: "/service/" }
+  - { name: "유닛", url: "/service/?cat=unit" }
+  - { name: "CTS 데이터센터" }
+
+svc-unit-aic:
+  - { name: "Home", url: "/" }
+  - { name: "Service", url: "/service/" }
+  - { name: "유닛", url: "/service/?cat=unit" }
+  - { name: "AI Chat" }
+
+# Article (6건, A-03은 W5+ 추가)
+article-mission:
+  - { name: "Home", url: "/" }
+  - { name: "Articles", url: "/article/" }
+  - { name: "사명" }
+
+article-dogfooding-intro:
+  - { name: "Home", url: "/" }
+  - { name: "Articles", url: "/article/" }
+  - { name: "도그푸딩 출발" }
+
+article-citation-moat:
+  - { name: "Home", url: "/" }
+  - { name: "Articles", url: "/article/" }
+  - { name: "Citation Moat 전략" }
+
+article-btcr-model:
+  - { name: "Home", url: "/" }
+  - { name: "Articles", url: "/article/" }
+  - { name: "B-TCR 모델" }
+
+article-bml-measurement-m1:
+  - { name: "Home", url: "/" }
+  - { name: "Articles", url: "/article/" }
+  - { name: "BML 측정 M1" }
+
+# Person (2건)
+person-charles:
+  - { name: "Home", url: "/" }
+  - { name: "People", url: "/person/" }
+  - { name: "Charles Lee (이철승)" }
+
+person-ceo-koo:
+  - { name: "Home", url: "/" }
+  - { name: "People", url: "/person/" }
+  - { name: "구자훈 (대표이사)" }
