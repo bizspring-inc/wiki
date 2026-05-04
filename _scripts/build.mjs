@@ -251,6 +251,8 @@ li:last-child { border-bottom: none; }
 a { color: hsl(var(--font-link)); text-decoration: none; font-weight: 500; }
 a:hover { color: hsl(var(--font-link-hover)); text-decoration: underline; text-underline-offset: 3px; }
 small { color: hsl(var(--muted-foreground)); font-size: 0.8125rem; margin-left: 8px; }
+.section-empty { opacity: 0.7; }
+.placeholder { padding: 14px 16px; color: hsl(var(--muted-foreground)); font-size: 0.9375rem; background: hsl(var(--surface-gray-light)); border-radius: var(--radius-sm); margin: 0; }
 footer { max-width: 880px; margin: 24px auto 40px; padding: 24px 48px; font-size: 0.8125rem; color: hsl(var(--muted-foreground)); text-align: center; }
 footer a { color: hsl(var(--muted-foreground)); }
 @media (max-width: 768px) { footer { padding: 24px 20px; } }
@@ -271,8 +273,10 @@ footer a { color: hsl(var(--muted-foreground)); }
 <p>${escapeHtml(config.site.description)}</p>
 ${TARGETS.map(t => {
     const items = pages.filter(p => p.path && p.path.startsWith('/' + t + '/'));
-    if (!items.length) return '';
-    const titleMap = { faq: 'FAQ', service: 'Service / Solutions', article: 'Articles', person: 'People' };
+    const titleMap = { faq: 'FAQ', service: '서비스', article: '아티클', person: '인물' };
+    if (!items.length) {
+      return `<div class="section section-empty" id="${t}"><h2>${titleMap[t] || t}</h2><p class="placeholder">준비 중입니다 — W5 정식 발행 예정</p></div>`;
+    }
     return `<div class="section" id="${t}"><h2>${titleMap[t] || t}</h2><ul>${items.map(p => `<li><a href="${p.path}">${escapeHtml(p.title)}</a><br><small>${escapeHtml(p.description || '')}</small></li>`).join('')}</ul></div>`;
   }).join('')}
 </main>
