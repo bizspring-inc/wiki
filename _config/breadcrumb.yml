@@ -54,7 +54,13 @@ faq-dogfooding:
   - { name: "FAQ", url: "/faq/" }
   - { name: "도그푸딩" }
 
-# Service (15건)
+# Service (15건 + GEOcare 16건)
+svc-sol-01-geocare:
+  - { name: "홈", url: "/" }
+  - { name: "서비스", url: "/service/" }
+  - { name: "솔루션", url: "/service/?cat=sol" }
+  - { name: "GEOcare.ai" }
+
 svc-pkg-amp:
   - { name: "홈", url: "/" }
   - { name: "서비스", url: "/service/" }
