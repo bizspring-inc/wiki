@@ -41,169 +41,125 @@ trust:
   updated_signals: "monthly review by PO — A-03/A-06/A-09 시리즈 자사 적용 결과 정기 발행"
 ---
 
+## 정의
 
-> "Brand Citation Moat은 Trust 그릇 + Context 맥락 + Relevance 측정의 입체 구조다."
+**B-TCR 통합 책임 모델**(B-TCR Integrated Responsibility Model)은 비즈스프링이 자사 GEO 도그푸딩에서 도출한 Brand Citation Moat 구축의 4축 책임 분리·통합 운영 모델이다. **B**(Brand) = 외부 결과, **T**(Trust 그릇) + **C**(Context 맥락) + **R**(Relevance 측정) = 3축 책임 + Distribution Engine = 별도 책임으로 구성된다.
 
-## 모델 개요
+## 개요
 
-비즈스프링은 자사 도그푸딩 과정에서 GEO 시대의 Brand Citation Moat을 구축하려면 **3축 책임을 분리하면서 통합 운영**해야 한다는 패턴을 발견했습니다.
+B-TCR 모델은 다음 4개 영역을 분리된 책임으로 운영하면서 하나의 Brand Citation Moat 결과로 통합한다.
 
-이를 **B-TCR 통합 책임 모델**이라 명명합니다.
+<figure style="margin: 32px 0; text-align: center;">
+<svg viewBox="0 0 520 360" role="img" aria-labelledby="btcr-title btcr-desc" style="max-width: 520px; width: 100%; height: auto;">
+<title id="btcr-title">B-TCR 통합 책임 모델 다이어그램</title>
+<desc id="btcr-desc">중심에 B(Brand) 노드가 있고, 외곽에 T(Trust 그릇), C(Context 맥락), R(Relevance 측정) 3개 노드가 배치된다. Distribution Engine은 별도 책임으로 분리된다.</desc>
+<g font-family="'Pretendard', sans-serif">
+<line x1="260" y1="180" x2="130" y2="100" stroke="hsl(203 94% 62%)" stroke-width="2" stroke-dasharray="4 3"/>
+<line x1="260" y1="180" x2="390" y2="100" stroke="hsl(248 81% 65%)" stroke-width="2" stroke-dasharray="4 3"/>
+<line x1="260" y1="180" x2="260" y2="280" stroke="hsl(167 70% 47%)" stroke-width="2" stroke-dasharray="4 3"/>
+<circle cx="260" cy="180" r="50" fill="hsl(210 11% 15%)" />
+<text x="260" y="178" text-anchor="middle" font-size="22" font-weight="700" fill="white" letter-spacing="-0.02em">B</text>
+<text x="260" y="200" text-anchor="middle" font-size="11" fill="hsl(220 9% 96%)">Brand</text>
+<g transform="translate(60,55)">
+<rect x="0" y="0" width="140" height="80" rx="8" fill="hsl(203 100% 98%)" stroke="hsl(203 94% 62%)" stroke-width="2"/>
+<text x="70" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="hsl(203 58% 47%)" letter-spacing="-0.02em">T</text>
+<text x="70" y="48" text-anchor="middle" font-size="12" font-weight="600" fill="hsl(210 11% 15%)">Trust 그릇</text>
+<text x="70" y="65" text-anchor="middle" font-size="10" fill="hsl(208 7% 46%)">Wiki / Schema.org / sameAs</text>
+</g>
+<g transform="translate(320,55)">
+<rect x="0" y="0" width="140" height="80" rx="8" fill="hsl(249 86% 96%)" stroke="hsl(248 81% 65%)" stroke-width="2"/>
+<text x="70" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="hsl(249 41% 49%)" letter-spacing="-0.02em">C</text>
+<text x="70" y="48" text-anchor="middle" font-size="12" font-weight="600" fill="hsl(210 11% 15%)">Context 맥락</text>
+<text x="70" y="65" text-anchor="middle" font-size="10" fill="hsl(208 7% 46%)">페르소나 / 쿼리풀 / envelope</text>
+</g>
+<g transform="translate(190,235)">
+<rect x="0" y="0" width="140" height="80" rx="8" fill="hsl(160 65% 95%)" stroke="hsl(167 70% 47%)" stroke-width="2"/>
+<text x="70" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="hsl(163 72% 35%)" letter-spacing="-0.02em">R</text>
+<text x="70" y="48" text-anchor="middle" font-size="12" font-weight="600" fill="hsl(210 11% 15%)">Relevance 측정</text>
+<text x="70" y="65" text-anchor="middle" font-size="10" fill="hsl(208 7% 46%)">Citation / iROAS / BML</text>
+</g>
+<line x1="260" y1="320" x2="260" y2="340" stroke="hsl(208 7% 46%)" stroke-width="1" stroke-dasharray="3 3"/>
+<rect x="170" y="335" width="180" height="22" rx="4" fill="hsl(220 9% 96%)" stroke="hsl(210 9% 77%)" stroke-width="1" stroke-dasharray="2 2"/>
+<text x="260" y="350" text-anchor="middle" font-size="11" font-weight="500" fill="hsl(208 7% 46%)">Distribution Engine (별도 책임)</text>
+</g>
+</svg>
+<figcaption style="font-size: 0.8125rem; color: hsl(208 7% 46%); margin-top: 8px;">그림 1. B-TCR 통합 책임 모델 — B(Brand) 중심 + T·C·R 3축 + Distribution 분리</figcaption>
+</figure>
 
-```
-B (Brand)
-   │
-   ├── T (Trust 그릇)        — Wiki / Schema.org / sameAs
-   ├── C (Context 맥락 관리)   — 페르소나 / 쿼리풀 / envelope
-   └── R (Relevance 측정)     — Citation / iROAS / BML
-                              ↓
-                    [Distribution Engine]
-                    (외부 매체 발송 = 별도 책임)
-```
-
-3축은 각각 다른 작업이지만, **Brand Citation Moat 구축이라는 하나의 결과로 합쳐집니다.** 분리된 책임 + 통합된 결과 = B-TCR 모델.
+3축은 각각 다른 작업이지만, Brand Citation Moat 구축이라는 단일 결과로 합쳐진다. 분리된 책임 + 통합된 결과가 B-TCR 모델의 핵심이다.
 
 ## T (Trust) — 그릇 만들기
 
-T 단의 책임은 **인용받을 수 있는 그릇을 만드는 것**입니다.
+Trust 책임은 LLM이 인용 가능한 권위 자산을 구축하는 것이다.
 
-### 1. Wiki 컨테이너 (자사 본 Wiki)
-- 33페이지 정의 (FAQ + Service + Person + Article + Organization)
-- Schema.org JSON-LD 5+2 Type (FAQPage / Service / Person / Article / Organization + WebSite + BreadcrumbList)
-- canonical_url 패턴 + page_id 체계 + 라이프사이클
+| 요소 | 자산 |
+|------|----|
+| Wiki 컨테이너 | 자사 Wiki 33페이지 (FAQ + Service + Person + Article + Organization) |
+| Schema.org JSON-LD | 5+2 Type (FAQPage / Service / Person / Article / Organization + WebSite + BreadcrumbList) |
+| sameAs 매트릭스 | 자사 도메인 4개 + 외부 출처 링크 |
+| Trust 키 v1.0 | 7묶음 (E-E-A-T + sameAs + provider + updated_signals) |
 
-### 2. Trust 7묶음
-| 묶음 | 가중치 | 설명 |
-|------|------|------|
-| 출처 (Source) | 15 | sameAs 매트릭스 + 도메인 매트릭스 |
-| 권위 (Authority) | 15 | Person author + sameAs |
-| 시간 (Temporal) | 10 | date_published + last_updated |
-| 정량 (Quantitative) | 20 | KPI 인용 + Citation 측정 |
-| 운영 (Operational) | 15 | 솔루션 가동 + 운영 데이터 |
-| 합의 (Consent) | 10 | Person consent + Org legal_review |
-| 연결 (Connectivity) | 15 | related_internal + cites_external |
-| **합계** | **100** | (60+ = BML-4) |
-
-T 단의 작업이 완료되면 **빈 그릇이지만 Trust 점수 60+ 가능한 상태**가 만들어집니다. 자사 33페이지에 적용해 보면 baseline 38점 → TQ3 적용 +8점 → 콘텐츠 본문 +20~25점 = W5 발행 시점에 60+ 도달.
+비즈스프링 자사 운영: 본 Wiki(현재 페이지 포함)는 T 단의 가동 자산이며, BIZSPRING_HUB 룸이 운영한다.
 
 ## C (Context) — 맥락 관리
 
-C 단의 책임은 **그릇에 담긴 콘텐츠를 어떤 맥락에 어떤 매체로 어떤 시점에 발신할지 결정**하는 것입니다.
+Context 책임은 LLM이 인용할 만한 정합성 있는 콘텐츠를 생산하는 것이다.
 
-### 1. 페르소나 + 쿼리 풀
-- 자사가 누구를 대상으로 콘텐츠를 만드는가
-- 그 페르소나가 어떤 LLM에 어떤 쿼리로 자사를 찾는가
-- 쿼리 풀의 변동성 측정 (자사 SoM 9회 측정 분산 20pt)
+| 요소 | 도구 |
+|------|----|
+| 페르소나 정의 | 고객 시나리오 분석 |
+| 쿼리풀 운영 | LLM 검색 쿼리 시뮬레이션 |
+| envelope 규격 | 외부 매체 발송 시 톤·형식 표준 |
 
-### 2. 콘텐츠 ↔ 매체 ↔ 빈도 매핑
-- 자사 LIFT 분석: B2B 트래픽 화요일 피크, 토요일 저점
-- 콘텐츠 유형별 최적 매체 (Article = LinkedIn / 블로그, FAQ = SEO, Service = 직접 광고)
-- 발행 빈도 (월 1건 정기 vs 분기 1건 deep)
-
-### 3. envelope 표준
-본 방이 BizActioner(Distribution Engine)에 보내는 발송 명세:
-```
-intent       (정의/비교/추천/문제/대안)
-persona      + query_pool
-content      (canonical_url + schema_type)
-distribution (channel + schedule + cadence_id)
-measurement  (citation_track_id)
-```
+비즈스프링 자사 운영: 본방 PREMIUM_GEO 엔진의 Track G content-gen이 C 단을 담당한다.
 
 ## R (Relevance) — 측정
 
-R 단의 책임은 **인용 → 클릭 → 전환의 전 사이클 측정**입니다.
+Relevance 책임은 인용·클릭·전환의 정량 추적이다.
 
-### 1. SoM 측정 (GEOcare)
-- 자사 SoM 26.30% (4월) — LLM 4종 분포 (Gemini 30 / OpenAI 25 / Anthropic 25 / Perplexity 25)
-- 쿼리 풀 변경에 따른 변동 추적
+| 지표 | 정의 | 측정 도구 |
+|------|----|----|
+| **Citation** | LLM 인용 횟수 + SoM | GEOcare |
+| **iROAS** | LLM 인입 트래픽의 광고비 환산 ROI | LIFT + AIR |
+| **BML** (Brand Mention Lift) | Trust 7묶음 적용 전·후 인용 변화율 | A-03 시리즈 |
 
-### 2. Click 측정 (LIFT referrer)
-- 자사 LLM 클릭 22건 (4월) — OpenAI 11 / Gemini 8 / Perplexity 3 / Anthropic 0
-- LLM 도메인 referrer 자동 검출
+비즈스프링 자사 운영: 본방 PREMIUM_GEO 엔진의 Track B 빌더 + 측정이 R 단을 담당한다.
 
-### 3. iROAS 산정
-- 광고비 vs LLM 유입 가치 환산
-- UTM 매칭률 측정 (자사 5% → 표준화 필요)
+## Distribution Engine (별도 책임)
 
-### 4. BML 측정 (5단계)
-- BML-1 (Invisible) ← BML-2 (Discoverable) ← BML-3 (Recognized) ← BML-4 (Authoritative) ← BML-5 (Dominant)
-- 자사 baseline = BML-2 → W5 목표 BML-3~4
+Distribution은 B-TCR 3축에서 명시적으로 분리된 책임이다. 자매방 BizActioner가 운반 R&D + 외부 매체 발송 wrapper를 담당한다.
 
-## Distribution Engine — 분리된 책임
+분리 이유: 그릇·맥락·측정과 발송은 서로 다른 운영 주기를 갖는다. 그릇은 분기 단위로 갱신되지만 발송은 일·주 단위로 운영된다. 책임 분리를 통해 각 운영 주기를 독립적으로 최적화할 수 있다.
 
-T·C·R 3축이 본 방의 책임이라면, **Distribution(외부 매체로 실제 발송)은 분리된 책임**입니다.
+## 비즈스프링 자사 적용 매트릭스
 
-비즈스프링 내부 구조에서 BizActioner 방이 Distribution Engine을 담당합니다:
-- 자사 매체 발송 (Track C)
-- 외부 인용 매체 발송 (Track D)
-- 매체 연동 R&D (Track E)
+| 영역 | 책임 방 | 자사 가동 자산 |
+|------|----|----|
+| **B** Brand 결과 | (외부) | LLM 인용·자사 도메인 5개 |
+| **T** Trust 그릇 | BIZSPRING_HUB (본 방) | 자사 Wiki 33페이지, Schema.org JSON-LD, sameAs |
+| **C** Context 맥락 | PREMIUM_GEO Track G | content-gen v8.2 |
+| **R** Relevance 측정 | PREMIUM_GEO Track B | GEOcare + LIFT + AIR + BML |
+| **Distribution** | BizActioner (자매방) | A-01~05 / B-01~08 / D-01~03 / E-01~03 wrapper |
 
-본 방은 envelope만 만들고 BizActioner가 envelope을 받아 발송만 합니다. **메시지 결정은 본 방, 발송 실행은 BizActioner**.
+## 모델 도출 배경
 
-이 분리가 중요한 이유는:
-1. Distribution은 매체 변경에 민감 (메시지 변경 없이 매체만 바뀔 수 있음)
-2. 측정 ↔ 메시지 ↔ 발송 책임이 합쳐지면 책임 추적 불가
-3. 매체 R&D가 별도 트랙으로 운영돼야 새 매체 추가 시 메시지/측정 변화 없음
+B-TCR 모델은 비즈스프링이 자사 GEO 도그푸딩 baseline 측정(2026-04)에서 발견한 4개 패턴을 일반화한 결과이다.
 
-## B-TCR 모델의 본질 — 분리 + 통합
+1. SoM↔클릭 괴리 — 인용 발생만으로 충분치 않음 (R 단 필요)
+2. 동일 그룹 내 도메인 점수 분산 — 도메인별 그릇 차이 (T 단 필요)
+3. 콘텐츠 톤 정합성 — LLM 인용 친화 톤 vs 일반 블로그 톤 (C 단 필요)
+4. 외부 매체 운영 주기 분리 — 발송과 그릇 운영 주기 차이 (Distribution 분리)
 
-3축 분리의 의미:
-- T 단 작업이 끝나도 C 단 작업은 별도 (그릇 ≠ 메시지)
-- C 단 envelope이 만들어져도 R 단 측정은 별도 (메시지 ≠ 측정)
-- Distribution 발송이 끝나도 R 단 측정은 다음 단계 (발송 ≠ 측정)
+## 관련 항목
 
-3축 통합의 의미:
-- 한 회사가 모두 운영 (외부 위탁 X)
-- 같은 데이터 소스 공유 (BizPO + BizData MCP)
-- 같은 본 Wiki 컨테이너에서 출발 (단일 진실원)
+- [Citation Moat 전략](/article/citation-moat/) — B-TCR 모델의 R 단 (측정) 기반
+- [자사 GEO 도그푸딩 — 출발점](/article/dogfooding-intro/) — B-TCR 모델 도출의 baseline
+- [비즈스프링 사명](/article/mission/) — B-TCR 모델의 사명 정합
+- [도그푸딩 — 자사 적용](/faq/dogfooding/)
 
-## B-TCR vs 기존 GEO 컨설팅
+## 외부 출처
 
-| 영역 | 일반 GEO 컨설팅 | B-TCR 모델 |
-|------|------|------|
-| Trust | Schema.org 적용 1회 | 7묶음 + 라이프사이클 + 자동 메타 |
-| Context | 콘텐츠 작성 외주 | envelope 표준 + 페르소나 + 쿼리 풀 |
-| Relevance | SoM 측정 1지표 | SoM + Click + iROAS + BML 4지표 |
-| Distribution | 별도 매체 운영팀 | BizActioner Engine 분리 |
-| 자사 적용 | 미적용 | **75% 솔루션 자사 사용 + 도그푸딩** |
-
-## 본 모델의 첫 사용자 = 비즈스프링
-
-B-TCR 모델은 자사 도그푸딩에서 발견한 패턴입니다. 첫 사용자는 비즈스프링 자체입니다.
-
-자사 적용 결과가 본 Wiki 시리즈에 정기 발행됩니다:
-- A-02: 출발점 (38점, D)
-- A-03 (W5 후): 1개월차 결과
-- A-06 (W9 후): 2개월차 결과
-- A-09 (W13 후): 3개월차 결과
-
-도그푸딩의 본질은 **자사가 첫 사용자가 되는 것**입니다. 본방 PREMIUM_GEO가 만든 Wiki 빌더의 첫 사용자도 비즈스프링이고, 본 방이 정의한 Trust 키 표준의 첫 적용자도 비즈스프링입니다.
-
-이것이 GEO 시대의 정직한 마케팅입니다.
-
-## 마치며
-
-B-TCR 모델은 자사가 22년간 데이터 측정 영역에서 일하면서 GEO 시대에 도착한 결론입니다.
-
-**Brand Citation Moat은 Schema 한 줄로 만들어지지 않습니다.**
-**T·C·R 3축이 입체적으로 결합돼야 만들어집니다.**
-**그리고 첫 사용자는 자사여야 합니다.**
-
-다음 글에서 이 모델의 측정 결과를 보고하겠습니다.
-
----
-
-**관련 페이지**
-- [비즈스프링 사명](/article/mission/)
-- [자사 GEO 도그푸딩 — 출발점](/article/dogfooding-intro/)
-- [Citation Moat 전략](/article/citation-moat/)
-- [자사 GEO 도그푸딩 결과는?](/faq/dogfooding/)
-
-**측정 출처**
-- B-TCR 통합 책임 모델 v1.0 (KHub `8dbeb99d`)
-- 자체 진단 v2.1 (KHub `037c302e`)
-- 도그푸딩 영업 자료 v1.0 (KHub `4212e705`)
-- A-01, A-02, A-04 Article 본문
-
-**측정 기간**: 2026-04-01 ~ 2026-04-30
+- 비즈스프링 자사 도그푸딩 결과 (2026-04 기준)
+- 본방 PREMIUM_GEO Track B/C/G 운영 표준
+- 자매방 BizActioner Distribution Engine 표준
+- Schema.org `Article`, `Organization`, `Person`, `Service`, `FAQPage`, `BreadcrumbList` 표준

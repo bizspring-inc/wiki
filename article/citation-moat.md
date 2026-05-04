@@ -40,178 +40,113 @@ trust:
   updated_signals: "monthly review by PO — 본 글 약속 검증 A-03 (5월 말 발행)"
 ---
 
+## 정의
 
-> "보이지만 안 눌린다."
-> 이것이 GEO 측정의 진짜 적입니다.
+**Citation Moat**(인용 해자)는 AI 검색 시대에서 권위 있는 자사 자산을 통해 LLM 인용을 안정적으로 확보하는 GEO 마케팅 전략이다. SoM(Share of Mind, 인용률)과 실제 클릭률 사이의 괴리를 측정·해소하는 체계로 구성된다.
 
-## 발견의 순간
+비즈스프링은 자사 4월 baseline에서 **Anthropic 25% 인용 vs 0건 클릭**이라는 케이스를 발견하여, 이 괴리를 Citation Moat 측정의 출발점으로 삼는다.
 
-비즈스프링은 자사 사이트의 GEO 효과를 두 가지 도구로 측정합니다.
+## 개요
 
-- **GEOcare**: AI 검색 점유율(SoM, Share of Mind) — LLM이 비즈스프링을 얼마나 인용하는가
-- **LIFT**: referrer 분석 — 실제로 LLM에서 자사 사이트로 넘어온 클릭이 몇 건인가
+Citation Moat 측정은 다음 두 지표를 동시에 운영한다.
 
-이 둘을 함께 봤을 때 흥미로운 발견이 나왔습니다.
+| 지표 | 측정 도구 | 의미 |
+|------|----|----|
+| **SoM** (Share of Mind) | GEOcare | LLM이 자사를 얼마나 인용하는가 |
+| **클릭** (Click Through) | LIFT (referrer 분석) | LLM에서 자사 사이트로 실제 넘어온 트래픽 |
 
-| LLM | SoM 인용률 (4/4) | 실제 클릭 (4월 30일) | 괴리 |
+두 지표 사이의 괴리가 Citation Moat 약점을 드러낸다.
+
+## 발견 사례 — Anthropic 25%↔0% 괴리 (2026-04)
+
+자사 4월 측정 결과 4개 LLM의 SoM과 실제 클릭은 다음과 같이 측정되었다.
+
+<figure style="margin: 32px 0;">
+<svg viewBox="0 0 600 280" role="img" aria-labelledby="som-click-title som-click-desc" style="max-width: 100%; width: 100%; height: auto;">
+<title id="som-click-title">SoM 인용률과 실제 클릭의 괴리 (2026-04)</title>
+<desc id="som-click-desc">4개 LLM의 SoM 인용률은 25~30%로 비슷하지만 실제 클릭률은 0~50%로 분산이 크다. 특히 Anthropic은 25% 인용에도 불구하고 4월 1개월간 클릭이 0건이다.</desc>
+<text x="0" y="20" font-family="'Pretendard', sans-serif" font-size="13" font-weight="600" fill="hsl(210 11% 15%)">LLM별 SoM 인용률 vs 실제 클릭 (2026-04)</text>
+<text x="0" y="38" font-family="'Pretendard', sans-serif" font-size="11" fill="hsl(208 7% 46%)">왼쪽 막대 = SoM (인용률 %) / 오른쪽 막대 = 클릭 (월간 건수)</text>
+<g font-family="'Pretendard', sans-serif" font-size="12" fill="hsl(210 11% 15%)">
+<g transform="translate(0,70)">
+<text x="0" y="14" font-weight="500">OpenAI</text>
+<rect x="80" y="2" width="125" height="18" fill="hsl(203 94% 62%)" rx="3"/>
+<text x="210" y="16" font-size="11" fill="hsl(208 7% 46%)">SoM 25%</text>
+<rect x="320" y="2" width="220" height="18" fill="hsl(167 70% 47%)" rx="3"/>
+<text x="545" y="16" font-size="11" fill="hsl(208 7% 46%)">11건 (50%)</text>
+</g>
+<g transform="translate(0,100)">
+<text x="0" y="14" font-weight="500">Gemini</text>
+<rect x="80" y="2" width="150" height="18" fill="hsl(203 94% 62%)" rx="3"/>
+<text x="235" y="16" font-size="11" fill="hsl(208 7% 46%)">SoM 30%</text>
+<rect x="320" y="2" width="160" height="18" fill="hsl(167 70% 47%)" rx="3"/>
+<text x="485" y="16" font-size="11" fill="hsl(208 7% 46%)">8건 (36%)</text>
+</g>
+<g transform="translate(0,130)">
+<text x="0" y="14" font-weight="500">Perplexity</text>
+<rect x="80" y="2" width="125" height="18" fill="hsl(203 94% 62%)" rx="3"/>
+<text x="210" y="16" font-size="11" fill="hsl(208 7% 46%)">SoM 25%</text>
+<rect x="320" y="2" width="60" height="18" fill="hsl(167 70% 47%)" rx="3"/>
+<text x="385" y="16" font-size="11" fill="hsl(208 7% 46%)">3건 (14%)</text>
+</g>
+<g transform="translate(0,160)">
+<text x="0" y="14" font-weight="700" fill="hsl(7 100% 60%)">Anthropic</text>
+<rect x="80" y="2" width="125" height="18" fill="hsl(203 94% 62%)" rx="3"/>
+<text x="210" y="16" font-size="11" fill="hsl(208 7% 46%)">SoM 25%</text>
+<rect x="320" y="2" width="3" height="18" fill="hsl(7 100% 60%)" rx="3"/>
+<text x="328" y="16" font-size="11" font-weight="700" fill="hsl(7 100% 60%)">0건 ⚠ "보이지만 안 눌린다"</text>
+</g>
+</g>
+<line x1="80" y1="62" x2="80" y2="190" stroke="hsl(210 14% 89%)" stroke-width="1"/>
+<line x1="320" y1="62" x2="320" y2="190" stroke="hsl(210 14% 89%)" stroke-width="1"/>
+<text x="80" y="215" font-family="'Pretendard', sans-serif" font-size="11" fill="hsl(208 7% 46%)">SoM 0%</text>
+<text x="320" y="215" font-family="'Pretendard', sans-serif" font-size="11" fill="hsl(208 7% 46%)">클릭 0건</text>
+</svg>
+<figcaption style="font-size: 0.8125rem; color: hsl(208 7% 46%); margin-top: 8px;">그림 1. 4개 LLM의 SoM 인용률(파랑)과 실제 클릭(녹색) 비교 (자사 측정, 2026-04)</figcaption>
+</figure>
+
+| LLM | SoM 인용률 (4/4 측정) | 실제 클릭 (4월 1개월) | 괴리 (클릭% − SoM%) |
 |------|------|------|------|
-| OpenAI (ChatGPT) | 25% | **11 (50%)** | +25pt |
-| Gemini | 30% | 8 (36%) | +6pt |
-| Perplexity | 25% | 3 (14%) | -11pt |
-| **Anthropic (Claude)** | **25%** | **0** ⚠️ | **-25pt** |
+| OpenAI (ChatGPT) | 25% | 11건 (50%) | +25pt |
+| Gemini | 30% | 8건 (36%) | +6pt |
+| Perplexity | 25% | 3건 (14%) | -11pt |
+| **Anthropic (Claude)** | **25%** | **0건** | **-25pt** |
 
-Anthropic은 비즈스프링을 25% 인용하지만, 4월 한 달간 실제 클릭은 **0건**이었습니다.
+Anthropic은 비즈스프링을 25% 인용하지만, 2026년 4월 한 달간 실제 클릭은 0건이었다. 이는 **"보이지만 안 눌린다"** 케이스로 분류된다.
 
-이것이 **"보이지만 안 눌린다"**는 케이스입니다.
+## SoM 단독 측정의 한계
 
-## SoM만으로는 부족한 이유
+GEO 측정의 통상 지표는 SoM이다. 그러나 SoM은 **인용 발생 여부**만 측정할 뿐, **인용이 트래픽으로 전환되는지**는 측정하지 못한다.
 
-GEO 측정의 통상 지표는 SoM(인용률)입니다. 그러나 SoM은 **인용 발생 여부**만 측정하지, **인용이 트래픽으로 전환되는 여부**는 측정하지 못합니다.
+비즈스프링은 SoM과 클릭을 동시 측정하여 다음 4개 케이스로 분류한다.
 
-```
-SoM 25%  =  AI가 비즈스프링을 25% 언급한다
-실제 클릭 0%  =  사용자가 그 언급을 보고도 클릭하지 않는다
-```
+| SoM | 클릭 | 케이스 | 처리 방향 |
+|----|----|----|----|
+| 높음 | 높음 | 정상 운영 (이상적 상태) | 유지 |
+| 높음 | **낮음** | **"보이지만 안 눌린다"** (Anthropic 케이스) | Citation Moat 보강 |
+| 낮음 | 높음 | 비주류 채널 우위 | SoM 보강 |
+| 낮음 | 낮음 | 미성숙 도메인 | 전반 강화 |
 
-비즈니스 가치는 **두 번째 단계**(클릭 → 사이트 방문 → 전환)에서 발생합니다. SoM이 높아도 클릭 0%면 실질적 비즈니스 효과는 0입니다.
+## Citation Moat 4축 보강 체계
 
-이것이 Citation Moat 전략의 출발점입니다.
+Citation Moat가 약한 도메인(높은 SoM·낮은 클릭)에 대해 다음 4축을 보강한다.
 
-## Citation Moat이란
+1. **Trust 그릇** — Schema.org JSON-LD + BreadcrumbList + sameAs 매트릭스
+2. **Context 맥락** — 페르소나·쿼리풀에 정합한 콘텐츠 생산
+3. **Relevance 측정** — Citation 횟수 + iROAS + BML 정량 추적
+4. **Distribution** — 외부 매체 발송 (별도 책임 — 자매방 BizActioner)
 
-Citation Moat은 **인용 → 클릭 → 전환의 전 사이클**에서 경쟁사가 따라올 수 없는 해자(moat)를 구축하는 전략입니다.
+이 체계가 [B-TCR 통합 책임 모델](/article/btcr-model/)이며, 비즈스프링 자사 도그푸딩에서 도출되어 일반화된 모델이다.
 
-3단계 모트(垓字, 海子)로 정의:
+## 관련 항목
 
-```
-1단계 모트: 인용되는가          (SoM 측정)
-2단계 모트: 클릭되는가          (LIFT referrer 측정) ⭐
-3단계 모트: 전환되는가          (LIFT 전환 측정)
-```
+- [자사 GEO 도그푸딩 — 출발점](/article/dogfooding-intro/) — 본 측정의 baseline
+- [B-TCR 통합 책임 모델](/article/btcr-model/) — Citation Moat 보강 체계의 일반화
+- [비즈스프링 사명](/article/mission/) — 측정으로 만드는 마케팅
+- [도그푸딩 — 자사 적용](/faq/dogfooding/)
 
-대부분의 GEO 컨설팅은 1단계 모트(SoM)만 다룹니다. 비즈스프링은 LIFT를 결합해 **2~3단계까지 측정**합니다.
+## 외부 출처
 
-## "보이지만 안 눌리는" 케이스의 원인
-
-Anthropic 25%↔0% 케이스를 분석하면 가능한 원인은 다음과 같습니다.
-
-### 원인 1: 인용 맥락이 부정적 또는 중립
-LLM이 비즈스프링을 언급하면서도 사용자가 클릭하고 싶을 만큼 매력적인 맥락이 아닐 수 있습니다.
-
-### 원인 2: 다른 경쟁사와 함께 묶여 묻힘
-LLM 출력에서 비즈스프링이 다수 경쟁사 리스트의 일부로만 언급되면 사용자는 첫 번째 또는 가장 두드러진 항목만 클릭합니다.
-
-### 원인 3: link 자체가 출력되지 않음
-일부 LLM은 답변에 외부 링크를 포함하지 않습니다. 텍스트로만 언급하면 클릭이 발생할 수 없습니다.
-
-### 원인 4: 사용자 의도와 답변 불일치
-SoM은 측정하지만 사용자의 실제 검색 의도와 비즈스프링 콘텐츠가 매칭되지 않으면 클릭은 발생하지 않습니다.
-
-자사 데이터만으로는 4가지 원인 중 어떤 것이 Anthropic 0% 클릭의 진짜 원인인지 단정하기 어렵습니다. **그래서 측정이 필요합니다.**
-
-## 비즈스프링의 입체 측정 체계
-
-자사는 GEOcare + LIFT 결합으로 다음을 측정합니다.
-
-### 1. SoM 변동성 측정 (GEOcare)
-
-```
-4월 한 달간 bizspring.co.kr SoM 9회 측정
-- 가장 낮은 측정: 18%
-- 가장 높은 측정: 38%
-- 분산: 20pt
-- 평균: 26.30%
-```
-
-**SoM은 한 번 측정으로 충분하지 않습니다.** 쿼리 풀이 바뀌면 점유율이 즉시 변합니다. 9회 측정해야 변동 패턴이 보입니다.
-
-### 2. LLM별 클릭 분포 (LIFT referrer)
-
-```
-4월 한 달 22 LLM 클릭 추적
-- chatgpt.com 11건 (50%)
-- gemini.google.com 8건 (36%)
-- perplexity.ai 3건 (14%)
-- claude/anthropic 0건 (0%)
-```
-
-LIFT는 referrer 헤더에서 LLM 도메인을 직접 검출합니다. JavaScript 픽셀이 광고 추적용 UTM 의존하지 않고도 LLM 클릭을 잡아냅니다.
-
-### 3. 페이지 별 LLM 유입 매핑
-
-자사 사이트에서 LLM이 가장 많이 유입시키는 페이지는?
-
-```
-1. /data_engineering.php - 압도적 1위 (전체 PV의 47.6%)
-2. / (홈)
-3. /prd_geocare.php (GEOcare 89점 페이지)
-```
-
-**LLM은 자사의 강한 페이지로 정확히 유입시키고 있습니다.** GEOcare 89점 페이지(prd_geocare.php)에 LLM 클릭이 집중되는 것은 도그푸딩의 또 다른 입증입니다.
-
-## Citation Moat 구축 4단계
-
-비즈스프링이 자사에 적용 중인 Citation Moat 4단계 전략:
-
-### 1단계 — 인용 가능성 만들기 (Trust 그릇)
-- Schema.org JSON-LD 적용 (FAQPage, Service, Person, Article, Organization)
-- WebSite + BreadcrumbList 컨텍스트 보강
-- 자사 sameAs 매트릭스 12개 (LinkedIn, GitHub, 블로그, SNS)
-
-→ **현재 자사 진행률: TQ3 Schema 적용 완료 (Trust 38 → 46, +8점)**
-
-### 2단계 — 인용 받기 (콘텐츠 깊이)
-- 페이지당 답변 가능한 질문 다수 (FAQPage 6 Q&A)
-- 정량 KPI 인용 (4월 LIFT 1,305 sess / 22 LLM 클릭 등)
-- Person author 명시 (찰스, 구자훈)
-
-→ **현재 자사 진행률: F-10 + A-02 + A-04 본문 3건 작성**
-
-### 3단계 — 클릭 전환율 높이기 ⭐
-- 인용 맥락에서 비즈스프링이 두드러지는 차별 메시지
-- "GEOcare가 자사 GEOcare 페이지를 89점 평가" 같은 메타 메시지
-- 답변 직접성 (사용자가 클릭해야만 얻을 수 있는 추가 가치)
-
-### 4단계 — 전환 측정 (Track 4 R 단)
-- LIFT referrer + UTM 결합 측정
-- LLM별 클릭률 + 사이트 내 행동 추적
-- iROAS 산정 (광고비 대비 LLM 유입 가치)
-
-## 비즈스프링이 만드는 시그널
-
-Citation Moat은 한 번에 만들어지지 않습니다. 시간이 쌓이는 시그널들이 모여 만들어집니다.
-
-비즈스프링은 다음을 약속합니다:
-
-1. **자사 SoM과 LIFT 클릭을 매월 공개** — 1개월차(A-03), 2개월차, 3개월차...
-2. **실패 케이스도 공개** — Anthropic 0%가 어떻게 변하는지 (또는 안 변하는지) 그대로
-3. **다른 경쟁사 비교는 하지 않음** — 자사 변화 추이만 정직하게
-
-> "Citation Moat은 만드는 것이 아니라 쌓이는 것입니다.
-> 1개월에 22 LLM 클릭에서 시작합니다.
-> 1년 후 어떻게 변할지는 측정의 일이지 약속의 일이 아닙니다."
-
-## 다음 글에서
-
-A-03 (5월 말 발행 예정)에서는 본 글의 약속을 검증합니다:
-
-- TQ3 Schema 적용 + 본문 작성 후 Trust 점수 변화는?
-- LLM 클릭은 22건에서 얼마나 변했는가?
-- Anthropic 0%는 어떻게 됐는가?
-
-도그푸딩의 본질은 자랑이 아니라 책임입니다. 만들었으면 측정하고, 측정했으면 공개합니다.
-
----
-
-**관련 페이지**
-- [자사 GEO 도그푸딩 — 출발점](/article/dogfooding-intro/)
-- [B-TCR 통합 책임 모델](/article/btcr-model/)
-- [비즈스프링 사명](/article/mission/)
-- [자사 GEO 도그푸딩 결과는?](/faq/dogfooding/)
-
-**측정 출처**
-- 자체 진단 v2.1 (KHub `037c302e`)
-- 도그푸딩 영업 자료 v1.0 (KHub `4212e705`)
-- A-02 dogfooding-intro (KHub `d16da5e5`)
-
-**측정 기간**: 2026-04-01 ~ 2026-04-30
+- 비즈스프링 GEOcare 자체 측정 결과 (SoM, 2026-04 기준)
+- 비즈스프링 LIFT 자체 측정 결과 (referrer, 2026-04 기준)
+- Anthropic / OpenAI / Gemini / Perplexity 4 LLM 인용·클릭 데이터 (자체 분석)
