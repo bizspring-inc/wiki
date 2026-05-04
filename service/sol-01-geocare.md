@@ -52,8 +52,6 @@ trust:
   updated_signals: "2026-05-04 검수"
 ---
 
-# GEOcare.ai — 국내 최초 GEO 통합 케어 SaaS
-
 ## 정의
 
 GEOcare.ai는 비즈스프링이 개발한 **국내 최초 SaaS형 GEO(Generative Engine Optimization) 통합 케어 플랫폼**이다. ChatGPT, Gemini, Claude, Perplexity 등 4대 LLM 답변 내 브랜드 점유율(SoM, Share of Model)을 실시간 진단·모니터링·최적화하며, Schema.org JSON-LD와 llms.txt 자동 생성, E-E-A-T 기반 콘텐츠 재설계를 단일 워크플로우에서 제공한다.
