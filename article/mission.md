@@ -40,7 +40,6 @@ trust:
   updated_signals: "monthly review by PO (Charles Lee, CTO) — A-03 시리즈 매월 발행 약속"
 ---
 
-# 비즈스프링 사명 — 측정으로 만드는 마케팅
 
 > "측정할 수 없는 것은 만들지 않는다.
 > 만든 것은 측정한다.

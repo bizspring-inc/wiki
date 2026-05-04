@@ -40,7 +40,6 @@ trust:
   updated_signals: "monthly review by PO — A-03 시리즈 매월 발행 약속 (5월 말 예정)"
 ---
 
-# 자사 GEO 도그푸딩 — 출발점
 
 > "당신이 만든 것을 당신이 쓰지 않으면, 당신은 무엇을 만들고 있는 것인가?"
 

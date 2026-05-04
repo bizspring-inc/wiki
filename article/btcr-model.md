@@ -41,7 +41,6 @@ trust:
   updated_signals: "monthly review by PO — A-03/A-06/A-09 시리즈 자사 적용 결과 정기 발행"
 ---
 
-# B-TCR 통합 책임 모델 — Brand × Trust × Context × Relevance
 
 > "Brand Citation Moat은 Trust 그릇 + Context 맥락 + Relevance 측정의 입체 구조다."
 

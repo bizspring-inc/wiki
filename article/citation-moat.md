@@ -40,7 +40,6 @@ trust:
   updated_signals: "monthly review by PO — 본 글 약속 검증 A-03 (5월 말 발행)"
 ---
 
-# Citation Moat 전략 — SoM과 클릭의 괴리에서 시작하는 GEO 측정
 
 > "보이지만 안 눌린다."
 > 이것이 GEO 측정의 진짜 적입니다.
