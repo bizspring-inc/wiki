@@ -8,7 +8,7 @@ import matter from 'gray-matter';
 import { marked } from 'marked';
 import { parse as parseYAML } from 'yaml';
 
-const TARGETS = ['faq', 'service', 'article', 'person'];
+const TARGETS = ['faq', 'service', 'article', 'person', 'dogfooding'];
 const OUTPUT_DIR = '_build';
 
 async function loadConfig() {
