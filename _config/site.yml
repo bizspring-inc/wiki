@@ -28,6 +28,7 @@ build:
     - "service"
     - "article"
     - "person"
+    - "dogfooding"
 
 # Schema.org defaults
 schema_defaults:
@@ -40,6 +41,7 @@ trust_thresholds:
   Service: 47
   Article: 50
   Person: 43
+  Article_dogfooding: 50
 
 # License
 license:
