@@ -304,8 +304,26 @@ async function main() {
     }
   }
 
+  // 정적 자산 복사 (data/ 디렉토리 — CSV/JSON 원시 데이터 공개)
+  const STATIC_DIRS = ['data'];
+  let staticCount = 0;
+  for (const sdir of STATIC_DIRS) {
+    try {
+      const sfiles = await readdir(sdir);
+      const destDir = join(OUTPUT_DIR, sdir);
+      await mkdir(destDir, { recursive: true });
+      for (const sf of sfiles) {
+        await copyFile(join(sdir, sf), join(destDir, sf));
+        staticCount++;
+      }
+      console.log(`📦 정적 자산 복사: ${sdir}/ (${sfiles.length} 파일)`);
+    } catch (e) {
+      // 디렉토리 없으면 스킵
+    }
+  }
+
   await buildIndex(config);
-  console.log(`✅ 빌드 완료: ${count} 페이지 + index.html`);
+  console.log(`✅ 빌드 완료: ${count} 페이지 + ${staticCount} 정적 자산 + index.html`);
 }
 
 main().catch(e => {
