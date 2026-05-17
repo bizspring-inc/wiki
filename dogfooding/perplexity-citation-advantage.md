@@ -16,7 +16,6 @@ sameAs:
   - https://wiki.bizspring.co.kr/
 ---
 
-# Perplexity 우위 패턴 — 자사 5도메인 × 4 LLM 인용률 매트릭스
 
 > 자사 5개 도메인을 4대 LLM에 측정한 결과 **Perplexity가 4/5 도메인에서 최고 SoM**. 측정 도구 만든 회사가 자사에 적용한 1차 데이터.
 
