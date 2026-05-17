@@ -17,7 +17,6 @@ sameAs:
   - https://wiki.bizspring.co.kr/
 ---
 
-# B-TCR baseline 측정 — 자사 W24 T76 / C71 / R79
 
 > 비즈스프링이 B-TCR 통합 책임 모델을 자사에 적용한 첫 측정 결과. Trust 그릇 76 / Context 맥락 71 / Relevance 측정 79. 시간 추적 baseline 출발점.
 
