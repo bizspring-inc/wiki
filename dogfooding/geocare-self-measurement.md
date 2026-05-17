@@ -17,7 +17,6 @@ sameAs:
   - https://wiki.bizspring.co.kr/
 ---
 
-# GEOcare가 GEOcare를 측정한다 — 자사 도메인 SoM 36.3% baseline
 
 > 비즈스프링이 자사 GEO 측정 도구 GEOcare로 자사 GEOcare.ai 도메인을 측정했다. 측정 도구를 자기에게 적용한 메타 도그푸딩 1차 데이터.
 
