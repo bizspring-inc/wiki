@@ -1,0 +1,34 @@
+[
+  {
+    "axis": "T_Trust",
+    "score": "76",
+    "grade": "B+",
+    "measurement_week": "W24",
+    "source": "B-TCR Score Engine",
+    "note": "Wiki container + Schema.org JSON-LD + sameAs 7건"
+  },
+  {
+    "axis": "C_Context",
+    "score": "71",
+    "grade": "B",
+    "measurement_week": "W24",
+    "source": "B-TCR Score Engine",
+    "note": "Persona/query pool partial + c8adea49 사건 약점"
+  },
+  {
+    "axis": "R_Relevance",
+    "score": "79",
+    "grade": "B+",
+    "measurement_week": "W24",
+    "source": "B-TCR Score Engine",
+    "note": "Citation 추적 + LIFT referrer 분석"
+  },
+  {
+    "axis": "total",
+    "score": "75.3",
+    "grade": "B+",
+    "measurement_week": "W24",
+    "source": "B-TCR Score Engine",
+    "note": "3축 가중 합산"
+  }
+]

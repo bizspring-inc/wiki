@@ -1,0 +1,8 @@
+metric,v1_0_openai,v1_0_anthropic,v1_0_gemini,v1_0_perplexity,v1_0_avg,v1_1_openai,v1_1_anthropic,v1_1_gemini,v1_1_perplexity,v1_1_avg,delta
+citation_potential,8,7.2,8,7.0,7.55,8,7.2,9,7.5,7.92,0.37
+experience,8,8,9,8,8.25,9,8,9,8,8.50,0.25
+expertise,7,7,9,7,7.50,8,7,9,8.5,8.13,0.63
+authoritativeness,7,5,8,6,6.50,7,5,8,6.5,6.63,0.13
+trustworthiness,8,7,9,6,7.50,8,8,9,7,8.00,0.50
+structure,8,7.5,9,8,8.13,7,7.5,9,8.5,8.00,-0.13
+eeat_total,7.50,6.75,8.75,6.75,7.44,8.00,7.00,8.75,7.50,7.81,0.37

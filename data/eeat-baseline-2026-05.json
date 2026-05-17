@@ -1,0 +1,18 @@
+[
+  {
+    "domain": "geocare.ai",
+    "avg_score": "11.67",
+    "max_score": "30.00",
+    "url_count": "6",
+    "analysis_date": "2026-05-10",
+    "source": "gp_geoex_eeat_analysis"
+  },
+  {
+    "domain": "bizspring.co.kr",
+    "avg_score": "31.76",
+    "max_score": "76.00",
+    "url_count": "50",
+    "analysis_date": "2026-05-10",
+    "source": "gp_geoex_eeat_analysis"
+  }
+]

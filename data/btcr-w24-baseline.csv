@@ -1,0 +1,5 @@
+axis,score,grade,measurement_week,source,note
+T_Trust,76,B+,W24,B-TCR Score Engine,Wiki container + Schema.org JSON-LD + sameAs 7건
+C_Context,71,B,W24,B-TCR Score Engine,Persona/query pool partial + c8adea49 사건 약점
+R_Relevance,79,B+,W24,B-TCR Score Engine,Citation 추적 + LIFT referrer 분석
+total,75.3,B+,W24,B-TCR Score Engine,3축 가중 합산

@@ -1,0 +1,182 @@
+[
+  {
+    "domain": "bizspring.co.kr",
+    "llm": "anthropic",
+    "queries": "256",
+    "mentioned": "93",
+    "som_rate_pct": "36.3",
+    "measurement_date": "2026-03-15",
+    "source": "gp_geoex_som_results"
+  },
+  {
+    "domain": "bizspring.co.kr",
+    "llm": "gemini",
+    "queries": "257",
+    "mentioned": "98",
+    "som_rate_pct": "38.1",
+    "measurement_date": "2026-03-15",
+    "source": "gp_geoex_som_results"
+  },
+  {
+    "domain": "bizspring.co.kr",
+    "llm": "openai",
+    "queries": "256",
+    "mentioned": "93",
+    "som_rate_pct": "36.3",
+    "measurement_date": "2026-03-15",
+    "source": "gp_geoex_som_results"
+  },
+  {
+    "domain": "bizspring.co.kr",
+    "llm": "perplexity",
+    "queries": "256",
+    "mentioned": "96",
+    "som_rate_pct": "37.5",
+    "measurement_date": "2026-03-15",
+    "source": "gp_geoex_som_results"
+  },
+  {
+    "domain": "blog.bizspring.co.kr",
+    "llm": "anthropic",
+    "queries": "19",
+    "mentioned": "8",
+    "som_rate_pct": "42.1",
+    "measurement_date": "2026-04-20",
+    "source": "gp_geoex_som_results"
+  },
+  {
+    "domain": "blog.bizspring.co.kr",
+    "llm": "gemini",
+    "queries": "19",
+    "mentioned": "8",
+    "som_rate_pct": "42.1",
+    "measurement_date": "2026-04-20",
+    "source": "gp_geoex_som_results"
+  },
+  {
+    "domain": "blog.bizspring.co.kr",
+    "llm": "openai",
+    "queries": "19",
+    "mentioned": "8",
+    "som_rate_pct": "42.1",
+    "measurement_date": "2026-04-20",
+    "source": "gp_geoex_som_results"
+  },
+  {
+    "domain": "blog.bizspring.co.kr",
+    "llm": "perplexity",
+    "queries": "19",
+    "mentioned": "8",
+    "som_rate_pct": "42.1",
+    "measurement_date": "2026-04-20",
+    "source": "gp_geoex_som_results"
+  },
+  {
+    "domain": "geocare.ai",
+    "llm": "anthropic",
+    "queries": "40",
+    "mentioned": "14",
+    "som_rate_pct": "35.0",
+    "measurement_date": "2026-03-08",
+    "source": "gp_geoex_som_results"
+  },
+  {
+    "domain": "geocare.ai",
+    "llm": "gemini",
+    "queries": "40",
+    "mentioned": "14",
+    "som_rate_pct": "35.0",
+    "measurement_date": "2026-03-08",
+    "source": "gp_geoex_som_results"
+  },
+  {
+    "domain": "geocare.ai",
+    "llm": "openai",
+    "queries": "40",
+    "mentioned": "14",
+    "som_rate_pct": "35.0",
+    "measurement_date": "2026-03-08",
+    "source": "gp_geoex_som_results"
+  },
+  {
+    "domain": "geocare.ai",
+    "llm": "perplexity",
+    "queries": "40",
+    "mentioned": "16",
+    "som_rate_pct": "40.0",
+    "measurement_date": "2026-03-08",
+    "source": "gp_geoex_som_results"
+  },
+  {
+    "domain": "growthplatform.ai",
+    "llm": "anthropic",
+    "queries": "314",
+    "mentioned": "117",
+    "som_rate_pct": "37.3",
+    "measurement_date": "2026-04-12",
+    "source": "gp_geoex_som_results"
+  },
+  {
+    "domain": "growthplatform.ai",
+    "llm": "gemini",
+    "queries": "318",
+    "mentioned": "60",
+    "som_rate_pct": "18.9",
+    "measurement_date": "2026-04-12",
+    "source": "gp_geoex_som_results"
+  },
+  {
+    "domain": "growthplatform.ai",
+    "llm": "openai",
+    "queries": "318",
+    "mentioned": "85",
+    "som_rate_pct": "26.7",
+    "measurement_date": "2026-04-12",
+    "source": "gp_geoex_som_results"
+  },
+  {
+    "domain": "growthplatform.ai",
+    "llm": "perplexity",
+    "queries": "318",
+    "mentioned": "119",
+    "som_rate_pct": "37.4",
+    "measurement_date": "2026-04-12",
+    "source": "gp_geoex_som_results"
+  },
+  {
+    "domain": "logger.co.kr",
+    "llm": "anthropic",
+    "queries": "395",
+    "mentioned": "109",
+    "som_rate_pct": "27.6",
+    "measurement_date": "2026-05-02",
+    "source": "gp_geoex_som_results"
+  },
+  {
+    "domain": "logger.co.kr",
+    "llm": "gemini",
+    "queries": "395",
+    "mentioned": "148",
+    "som_rate_pct": "37.5",
+    "measurement_date": "2026-05-02",
+    "source": "gp_geoex_som_results"
+  },
+  {
+    "domain": "logger.co.kr",
+    "llm": "openai",
+    "queries": "398",
+    "mentioned": "102",
+    "som_rate_pct": "25.6",
+    "measurement_date": "2026-05-02",
+    "source": "gp_geoex_som_results"
+  },
+  {
+    "domain": "logger.co.kr",
+    "llm": "perplexity",
+    "queries": "394",
+    "mentioned": "155",
+    "som_rate_pct": "39.3",
+    "measurement_date": "2026-05-02",
+    "source": "gp_geoex_som_results"
+  }
+]
